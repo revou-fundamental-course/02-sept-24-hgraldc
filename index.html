@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+    <header class="main-header">
+        <h1>Welcome to  Katik</h1>
+        <p>Selamat datang di Katik, kalkulator yang estetik</p>
+    </header>
 
+    <main>
+        <section class="selection-content">
+            <button type="button" class="selection-btn">Segitiga</button>
+            <button type="button" class="selection-btn">Jajargenjang</button>
+        </section>
+        <section class="main-content">
+            <aside class="card">
+                <header class="section-header">
+                    <h2>Luas Segitiga</h2>
+                    <img src="./assets/Rumus Luas Segitiga.png" alt="Gambar Luas Segitiga" class="formula-image">
+                    <p class="formula">Rumus: <strong>L = ½ × alas × tinggi</strong></p>
+                </header>
+                <form class="luas-form">
+                    <div class="input-group">
+                        <label for="panjang-alas-luas">Panjang alas</label>
+                        <input id="panjang-alas-luas" type="number" required placeholder="Masukkan panjang alas">
+                    </div>
+                    <div class="input-group">
+                        <label for="tinggi-luas">Tinggi</label>
+                        <input id="tinggi-luas" type="number" required placeholder="Masukkan Tinggi">
+                    </div>
+                    <p id="hasil-luas">Hasil Perhitungan: -</p>
+                    <div class="button-group">
+                        <button type="button" onclick="hitungLuas()">Hitung</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </aside>
+            <aside class="card">
+                <header class="section-header">
+                    <h2>Luas Segitiga</h2>
+                    <img src="./assets/Rumus Keliling Segitiga.png" alt="Gambar Keliling Segitiga" class="formula-image">
+                    <p class="formula">Rumus: <strong>K = sisi 1 + sisi 2 + sisi 3</strong></p>
+                </header>
+                <form class="luas-form">
+                    <div class="input-group">
+                        <label for="sisi1">Sisi Ke-1</label>
+                        <input id="sisi1" type="number" required placeholder="Masukkan Sisi Ke-1">
+                    </div>
+                    <div class="input-group">
+                        <label for="sisi2">Sisi Ke-2</label>
+                        <input id="sisi2" type="number" required placeholder="Masukkan Sisi Ke-2">
+                    </div>
+                    <div class="input-group">
+                        <label for="sisi3">Sisi Ke-3</label>
+                        <input id="sisi3" type="number" required placeholder="Masukkan Sisi Ke-3">
+                    </div>
+                    <p id="hasil-luas">Hasil Perhitungan: -</p>
+                    <div class="button-group">
+                        <button type="button" onclick="hitungKeliling()">Hitung</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </aside>
+        </section>
+    </main>
 </body>
-
+<script src="js/script.js"></script>
 </html>
